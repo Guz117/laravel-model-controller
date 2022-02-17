@@ -9,9 +9,12 @@ class PageController extends Controller
 {
     public function index()
     {
-        $movies = Movie::all();
-        // dd($movies);
+        // $movies = Movie::all();
+        $movies = Movie::orderBy('title', 'asc')->get();
+        // dd($movies_order);
+        // $data = ['movies' => $movies];
         $data = ['movies' => $movies];
+        // $order = ['movies_order' => $movies_order];
         return view('home', $data);
     }
 }
