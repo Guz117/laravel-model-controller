@@ -1,0 +1,31 @@
+h1 {
+  color: dodgerblue;
+  font-size: 5em;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cards .card-movie {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(50% - 1em);
+  margin-bottom: 3em;
+  background-color: rgba(0, 0, 0, 0.322);
+}
+
+.cards .card-movie h2 {
+  color: crimson;
+}
+
+.cards .card-movie h2,
+.cards .card-movie span {
+  text-transform: uppercase;
+}
+
